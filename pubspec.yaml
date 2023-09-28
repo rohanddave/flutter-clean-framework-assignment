@@ -1,0 +1,29 @@
+name: todos
+description: A new Flutter project.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.5 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  clean_framework: ^3.2.3
+  clean_framework_http: ^0.4.1
+  clean_framework_router: ^0.5.5
+
+dev_dependencies:
+  clean_framework_test: ^0.5.1
+  mocktail: ^1.0.0
+  very_good_analysis: ^5.0.0+1
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
