@@ -4,24 +4,32 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a starting point for a Flutter application using clean_framework.
 
-A few resources to get you started if this is your first Flutter project:
+### Features:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Fetches a list of todos
+- Navigates to details page of todo
 
 ## Test Coverage
 
 To check test coverage run the following commands
 
+### Installation
+
 ```sh
 brew install lcov
+```
+
+### Running
+
+```sh
 flutter test --coverage
 genhtml coverage/lcov.info -o coverage/html
+```
+
+### Viewing
+
+```sh
 open coverage/html/index.html
 ```
