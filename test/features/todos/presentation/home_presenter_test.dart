@@ -82,7 +82,7 @@ void main() {
     );
 
     presenterCallbackTest<HomeViewModel, HomeUIOutput, HomeUseCase>(
-      'calls refresh pokemon in use case',
+      'calls refresh todo in use case',
       useCase: HomeUseCaseMock(),
       create: (builder) => HomePresenter(builder: builder),
       setup: (useCase) {

@@ -11,7 +11,7 @@ import 'package:todos/widgets/todo_card.dart';
 void main() {
   group('HomeUI tests |', () {
     uiTest(
-      'shows pokemon list correctly',
+      'shows todos list correctly',
       ui: HomeUI(),
       viewModel: HomeViewModel(
         todos: [
@@ -61,7 +61,7 @@ void main() {
     );
 
     uiTest(
-      'tapping on pokemon navigates to detail page',
+      'tapping on todo navigates to detail page',
       ui: HomeUI(),
       viewModel: HomeViewModel(
         todos: [
