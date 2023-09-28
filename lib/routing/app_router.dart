@@ -16,7 +16,10 @@ class TodoAppRouter extends AppRouter<Routes> {
             AppRoute.custom(
               route: Routes.todo,
               builder: (_, state) {
-                return TodoUI(id: state.params['todo_id'] ?? '');
+                return TodoUI(
+                  id: state.params['todo_id'] ?? '',
+                  title: state.params['title'] ?? '',
+                );
               },
             ),
           ],

@@ -38,8 +38,10 @@ class HomeUI extends UI<HomeViewModel> {
               return TodoCard(
                 title: todo.title,
                 id: todo.id,
-                onTap: () => context.router
-                    .go(Routes.todo, params: {'todo_id': todo.id.toString()}),
+                onTap: () => context.router.go(
+                  Routes.todo,
+                  params: {'todo_id': todo.id.toString(), 'title': todo.title},
+                ),
               );
             },
           ),
