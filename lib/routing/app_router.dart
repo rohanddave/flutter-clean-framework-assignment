@@ -16,7 +16,6 @@ class TodoAppRouter extends AppRouter<Routes> {
             AppRoute.custom(
               route: Routes.todo,
               builder: (_, state) {
-                print(state.location);
                 return TodoUI(id: state.params['todo_id'] ?? '');
               },
             ),

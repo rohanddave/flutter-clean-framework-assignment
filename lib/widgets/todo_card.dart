@@ -19,7 +19,7 @@ class TodoCard extends StatelessWidget {
       child: SizedBox(
         height: 160,
         child: Card(
-          color: Color(0xff22b65d),
+          color: const Color(0xff22b65d),
           child: Center(
             child: ListTile(
               title: Text(title),

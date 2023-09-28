@@ -30,7 +30,7 @@ void main() {
         return useCase.fetchTodos();
       },
       expect: () => [
-        HomeUIOutput(
+        const HomeUIOutput(
           todos: [],
           status: HomeStatus.loading,
           isRefresh: false,
@@ -82,12 +82,12 @@ void main() {
         return useCase.fetchTodos();
       },
       expect: () => [
-        HomeUIOutput(
+        const HomeUIOutput(
           todos: [],
           status: HomeStatus.loading,
           isRefresh: false,
         ),
-        HomeUIOutput(
+        const HomeUIOutput(
           todos: [],
           status: HomeStatus.failed,
           isRefresh: false,
@@ -104,12 +104,12 @@ void main() {
         return useCase.fetchTodos(isRefresh: true);
       },
       expect: () => [
-        HomeUIOutput(
+        const HomeUIOutput(
           todos: [],
           status: HomeStatus.failed,
           isRefresh: true,
         ),
-        HomeUIOutput(
+        const HomeUIOutput(
           todos: [],
           status: HomeStatus.loaded,
           isRefresh: false,
