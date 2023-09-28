@@ -88,14 +88,15 @@ void main() {
 
         final routeData = tester.routeData!;
         expect(routeData.route, Routes.todo);
-        expect(routeData.params, equals({'todo_id': '1'}));
+        expect(routeData.params, equals({'todo_id': '1', 'title': 'todo 1'}));
 
         tester.element(find.byType(MaterialApp)).router.pop();
         await tester.pumpAndSettle();
 
         final poppedRouteData = tester.poppedRouteData!;
         expect(poppedRouteData.route, Routes.todo);
-        expect(poppedRouteData.params, equals({'todo_id': '1'}));
+        expect(poppedRouteData.params,
+            equals({'todo_id': '1', 'title': 'todo 1'}));
       },
     );
   });
